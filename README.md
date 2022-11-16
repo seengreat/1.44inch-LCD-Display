@@ -52,20 +52,20 @@ git clone https://github.com/WiringPi/WiringPi<br>
 cd WiringPi<br> 
 ./build<br> 
 gpio -v<br> 
-# Running gpio - v will result in version 2.70. If it does not appear, it indicates an installation error<br> 
+#Running gpio - v will result in version 2.70. If it does not appear, it indicates an installation error<br> 
 If the error prompt "ImportError: No module named 'wiring pi'" appears when running the python version of the example program, run the following command:<br> 
-# For Python 2. x version<br> 
+#For Python 2. x version<br> 
 pip install wiringpi<br> 
  
-# For Python 3.x version<br> 
+#For Python 3.x version<br> 
 pip3 install wiringpi<br> 
 Note: If the installation fails, you can try the following compilation and installation:<br> 
 git clone--recursive https://github.com/WiringPi/WiringPi-Python.git<br> 
 Note: --recursive option can automatically pull submodules, otherwise you need to download them manually.<br> 
 Go to the WiringPi-Python folder you just downloaded and enter the following command to compile and install:<br> 
-# For Python 2.x version<br> 
+#For Python 2.x version<br> 
 sudo python setup.py install <br> 
-# For Python 3.x version<br> 
+#For Python 3.x version<br> 
 sudo python3 setup.py install<br> 
 If the following error occurs:<br> 
 "Error:Building this module requires either that swig is installed<br> 
@@ -91,7 +91,7 @@ sudo apt-get install python3-numpy<br>
 sudo apt-get install python3-pip<br> 
 sudo pip3 install spidev<br> 
 ### C version demo codes
-###Note: For Raspberry Pi 4B and versions after raspbian_lite-2019-06-20, the following settings are required, otherwise the keys cannot be entered normally.<br> 
+#### Note: For Raspberry Pi 4B and versions after raspbian_lite-2019-06-20, the following settings are required, otherwise the keys cannot be entered normally.<br> 
 sudo nano /boot/config.txt<br> 
 Add the following:<br> 
 gpio=17,22,18,13,26,5,19,6,20,21,23=pu<br> 
